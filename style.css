@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.main{
+    width: 100%;
+    background: radial-gradient(circle, #2600ff, #00c3ff 100%), url(vv.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+
+}
+
+.logo{
+    color: #ff0000;
+    font-size: 35px;
+    font-family: arial;
+    padding-left: 10;
+    float: left;
+    padding-top: 10px;
+    
+}
+.Menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin: 30px;
+    margin-left: 50px;
+    font-size: 14px;
+    font-family: verdana;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5 ease-in-out;
+
+}
+
+ul li a:hover{
+    color: lawngreen;
+
+}
+ .search {
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+ }
+ .srch{
+    font-family: verdana;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid#000000;
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 10px;
+    
+ }
+ .btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    margin-top: 15px;
+    color: #070101;
+    font-size: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+ }
+ .btn:hover{  
+    background-color: lawngreen;
+ }
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+h1{
+    padding-top: 70px;
+}
+
+#typewriter{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    border-right: 2px solid black;
+    animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink{
+    from{border-color: transparent;
+    }
+    to{border-color: black;
+    }
+}
