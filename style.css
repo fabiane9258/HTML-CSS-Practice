@@ -1,125 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'poppins', sans-serif;
 }
 
-.main{
+html{
+    font-size: 62.5%;
+}
+
+body{
     width: 100%;
-    background: radial-gradient(circle, #2600ff, #00c3ff 100%), url(vv.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 109vh;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: #ff0000;
+    
 }
-
-.navbar{
-    width: 1200px;
-    height: 75px;
-    margin: auto;
-
-}
-
-.icon{
-    width: 200px;
-    float: left;
-    height: 70px;
-
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 100;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
 .logo{
+    font-size: 3rem;
     color: #ff0000;
-    font-size: 35px;
-    font-family: arial;
-    padding-left: 10;
-    float: left;
-    padding-top: 10px;
-    
-}
-.Menu{
-    width: 400px;
-    float: left;
-    height: 70px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-family: algerian;
 }
 
-ul{
-    float: left;
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover, 
+nav a.active{
+    color: #ff0000;
+    border-bottom: 3px solid #ff0000;
+}
+
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #ff0000;
+        border-bottom:3px solid #ff0000;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #ff0000;
+    }
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8rem;
+    background-color: black; 
 }
-ul li{
-    list-style: none;
-    margin: 30px;
-    margin-left: 50px;
-    font-size: 14px;
-    font-family: verdana;
+
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
 }
-ul li a{
-    text-decoration: none;
+
+span{
+    color: #ffffff;
+}
+
+.home-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p{
+    font-size: 1.6rem;
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+    width: 32vw;
+    border: 50%;
+    box-shadow: 0 0 25px solid #ff0000;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border:0.1rem solid #ff0000ff;
+    font-size: 2rem;
+    border-radius: 25%;
+    margin: 3rem 1.5rem 3rem 0 0;
+    transition: 0.3s ease;
+    color:#0000ff;
+}
+
+.social-icons a:hover{
     color: black;
-    transition: 0.5 ease-in-out;
-
+    transform: scale(1.3) translateY(-5px);
+    background-color: #0000ff;
+    box-shadow: 0 0 25px #0000ff;
 }
 
-ul li a:hover{
-    color: lawngreen;
-
+.btn{
+    display: inline-block;
+    margin: 10px;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color:#00ff00;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 1px solid #0000ff;
+    transform: 0.3s ease;
+    cursor: pointer;
 }
- .search {
-    width: 330px;
-    float: left;
-    margin-left: 270px;
- }
- .srch{
-    font-family: verdana;
-    width: 200px;
-    height: 40px;
-    background: transparent;
-    border: 1px solid#000000;
-    margin-top: 15px;
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: #0000ff;
     color: rgb(0, 0, 0);
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 10px;
-    
- }
- .btn{
-    width: 100px;
-    height: 40px;
-    background: #ff7200;
-    margin-top: 15px;
-    color: #070101;
-    font-size: 15px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 10px;
- }
- .btn:hover{  
-    background-color: lawngreen;
- }
-.btn:focus{
-    outline: none;
-}
-.srch:focus{
-    outline: none;
-}
-h1{
-    padding-top: 70px;
+    box-shadow: 0 0 25px #0000ff;
 }
 
-#typewriter{
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'Courier New', monospace;
-    border-right: 2px solid black;
-    animation: blink 0.5s step-end infinite;
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
 }
 
-@keyframes blink{
-    from{border-color: transparent;
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content:"Software Developer";
+    color: #ffffff;
+    animation: words 15s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #ff0000;
     }
-    to{border-color: black;
+}
+
+@keyframes words{
+    0%, 20%{
+      content:" Web Developer";
+    }
+    21%, 40%{
+      content:" Software Developer";
+
+    }
+    41%, 60%{
+      content:"Web Designer";
+    }
+    61%, 80%{
+      content:"Tech Reviewer";
+    }
+    81%, 100%{
+      content:"Mi hufanya kila kitu";
+    }
+}
+
+@media(max-width:1000px){
+    .home{
+        gap:4rem;
+    }
+}
+
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        gap: 5rem 4rem;
+    }
+
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-img img{
+        width: 70vh;
+        margin-top: 4rem;
     }
 }
