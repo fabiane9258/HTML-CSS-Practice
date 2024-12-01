@@ -1,41 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/jpg" href="fab.png">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">Farbee</a>
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Experience</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-     <section class="home">
-        <div class="home-img">
-            <img src="Farbee.jpg">
-        </div>
-        <div class="home-content">
-            <h1>Hi, it's <span>Fabian</span></h1>
-            <h3 class="typing-text" >I'm a <span></span></h3>
-            <p>As  a dedicated web designer and developer,I specialize in creating user-friendly, visually appealing and <br>functional websites tailored to meet diverse needs. With a strong background in both design and development,<br> I combine creativity with technical expertise to deliver results that exceed expectations.<br> Let's turn your vision into an exceptional digital experience.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>F@RBEE</span>
             </div>
-            <a href="#" class="btn">Hire me</a>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="farbee.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey i'm<span>Fabian</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a<span class="typewriter-text"></span><label for=""></label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">As  a dedicated web designer and developer,I specialize in creating user-friendly, visually appealing and <br>functional websites tailored to meet diverse needs. With a strong background in both design and development,<br> I combine creativity with technical expertise to deliver results that exceed expectations.<br> Let's turn your vision into an exceptional digital experience.</p>
+                <div class="social-links">
+                    <a href="www.linkedin.com/in/fabiane-atambo-90947333a" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/fabiane9258" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/fabf8871_rocky?t=HCtCYhS2dLr_guPm5ONLUA&s=09" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/__fabian.rocky_?igsh=MzNlNGNkZWQ4Mg==" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100076414561183&mibextid=ZbWKwL" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1700"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@fabianeatambo?_t=8rdr133sbup&_r=1" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1800"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>Hire Me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>About Me</span></div>
+            <div class="about-details">
+                <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                    <img src="farbee.jpg" alt=""/>
+                </div>
+                <div class="right">
+                    <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">Designing Is My Passion</div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">As a web and software designer, designing is my passion because it blends creativity with functionality to create intuitive user experiences. I enjoy transforming complex ideas into visually engaging, easy-to-use interfaces. Whether designing websites or software, I love solving problems and enhancing usability, making technology more accessible and enjoyable for my clients.</p>
+                    <div class="button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400"></div>
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Skills</span></div>
+            <div class="skills-details">
+                <div class="text">
+                    <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                        Skills Reflects Our Knowlegde
+                    </div>
+                    <P data-aos="fade-right">My skills reflect my knowledge, as they are built on a foundation of continuous learning and hands-on experience. Over time, I’ve honed my abilities in web and software design, gaining a deep understanding of design principles, coding languages, and user experience. Each project I take on is an opportunity to apply and expand my skills, allowing me to create more effective and innovative solutions. My skills not only showcase my expertise but also my commitment to growth and adapting to new challenges.</P>
+                    <div class="experience">
+                        <div class="num">2</div>
+                        <div class="exp">
+                            Years Of<br>
+                            Experience
+                        </div>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="topic"data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">HTML</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">90%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="150">CSS</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">80%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">Javascript</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">60%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="450">PHP</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">60%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-     </section>
+    <section class="services" id="services">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1200" ><span>My Services</span></div>
+            <div class="boxes">
+                <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                    <div class="icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="topic">Web Development</div>
+                    <p>My web development skills reflect my knowledge and commitment to building functional, user-friendly websites. With expertise in various coding languages and frameworks, I create responsive, dynamic sites. Each project helps me refine my skills and stay current with the latest technologies therefore delivering seamless digital experiences.</p>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                    <div class="icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="topic">Graphic Design</div>
+                    <p>Graphic design is a powerful way for me to express creativity and communicate ideas visually. With a strong foundation in design principles, typography, and various design tools, I focus on creating impactful and aesthetically pleasing designs. Each project allows me to refine my skills and craft designs that are not only visually appealing but also functional and meaningful.</p>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                    <div class="icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="topic">Digital Marketing</div>
+                    <p>Digital marketing enables me to craft strategies that connect brands with their audience in meaningful ways. By using online platforms and analytics, I design campaigns that drive results and increase visibility. I focus on understanding trends, optimizing outreach, and creating effective, data-driven marketing solutions.</p>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                    <div class="icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <div class="topic">Icon Design</div>
+                    <p>As an icon designer, I focus on creating simple yet impactful visuals that communicate meaning clearly and effectively. By combining creativity with attention to detail, I design icons that are both functional and visually appealing. My work ensures that each icon is easily recognizable and enhances the overall user experience.</p>
+                </div>
+                <div class="box"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+                    <div class="icon">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <div class="topic">Photography</div>
+                    <p>Photography allows me to capture moments, emotions, and stories through the lens. With a keen eye for composition, lighting, and detail, I create images that evoke feelings and convey messages. Each photograph is an opportunity to freeze time and share a unique perspective with others.</p>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
+                    <div class="icon">
+                        <i class="fas fa-tablet-alt"></i>
+                    </div>
+                    <div class="topic">App Development</div>
+                    <p>App development allows me to turn innovative ideas into functional, user-friendly mobile experiences. By mastering coding languages and development frameworks, I design apps that are intuitive, efficient, and tailored to user needs. My focus is on creating seamless experiences that solve problems and enhance daily life through technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                <span>Contact Me</span>
+            </div>
+            <div class="text">
+                <div class="topic"  data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Have Any Project?</div>
+                <p> I’m always excited to work on projects that push boundaries and bring ideas to life. Let’s discuss your project and create something amazing together.</p>
+                <div class="button"  data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                    <button>Let’s Chat</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="text">
+            <span>Created By
+                <a href="#">F@rbee the Dev 🗿</a> <br>
+                | &#169; 2024 All Rights Reserved
+            </span>
+        </div>
+    </footer>
+    <script  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
 </body>
 </html>
