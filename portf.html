@@ -4,141 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <style>
-        *{
-            background: #660027;
-            color: #f8bab2;
-            font-family: 'poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .logo{
-            font-family: algerian;
-            font-size: 50px;
-            text-shadow: 0 0 40px #EBD6DC;
-            
-        }
-        .nav{
-            display: flex;
-            gap: 50px;
-        }
-        .container {
-            width: 80%;
-            margin: 50px auto;
-        }
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #4CAF50;
-        }
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .skill-item {
-            width: 45%;
-            margin-bottom: 30px;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .skill-item h3 {
-            margin-bottom: 10px;
-            font-size: 1.5rem;
-        }
-        .progress-bar {
-            height: 20px;
-            background-color: #f3f3f3;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-        .progress {
-            height: 100%;
-            border-radius: 10px;
-            text-align: center;
-            line-height: 20px;
-            color: white;
-            font-weight: bold;
-        }
-        .html {
-            width: 90%;
-            background-color: #e44d26;
-        }
-        .css {
-            width: 85%;
-            background-color: #264de4;
-        }
-        .skill-description {
-            font-size: 1rem;
-            margin-top: 10px;
-            color: #555;
-        }
-        .title {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body> 
     <div>
         <div class="navbar">
-            <div class="logo">F@RBEE</div>
+            <span class="logo">F@RBEE</span>
             <div class="nav">
-            <a href="">Home</a>
+            <a href="portf.html">Home</a>
             <a href="">About Me</a>
-            <a href="">Skills</a>
-            <a href="">Contact Me</a>
+            <a href="skills.html">Skills</a>
+            <a href="contactme.html">Contact Me</a>
             </div>
-        </div>
-         <div class="container">
-        <div class="section-title">
-            <h2>Skills</h2>
-        </div>
-
-        <div class="skills-list">
-            <div class="skill-item">
-                <h3>HTML</h3>
-                <div class="progress-bar">
-                    <div class="progress html">90%</div>
-                </div>
-                <p class="skill-description">
-                    As a web designer and developer, I have extensive experience in HTML. I use HTML5 to create well-structured, accessible, and semantic web pages. I am comfortable working with various elements such as forms, tables, media embedding, and more. My proficiency ensures a strong foundation for any website.
-                </p>
-            </div>
-            
-            <div class="skill-item">
-                <h3>CSS</h3>
-                <div class="progress-bar">
-                    <div class="progress css">85%</div>
-                </div>
-                <p class="skill-description">
-                    I am highly skilled in CSS, particularly in creating responsive designs. I use CSS3 features such as Flexbox and Grid to build adaptable layouts. I also utilize animations, transitions, and custom properties (CSS variables) to enhance the user experience and aesthetic appeal of websites.
-                </p>
-            </div>
-        </div>
+        </div><br>
+        <header>
+            <h1 style="color: hsl(0, 100%, 50%);">Welcome to My Portfolio</h1>
+            <p>Explore my work, skills, and passion for development!</p>
+        </header>
+        <div class="me">
+        <span class="img"><img src="farbee.jpg" alt="fabianlogo" width="400" height="400"></span>
+     
+        <section>
+            <h2>Hi, I'm Fabian</h2>
+            <p>I'm a web designer specializing in web development, creating elegant and functional solutions for businesses and individuals.</p>
+            <a href="about.html" class="cta-btn">Learn More About Me</a>
+           
+        </section>
     </div>
-
-        <div class="contact-form">
-            <h2>Contact Me</h2>
-            <form action="your-email-handler.php" method="POST">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required><br><br>
     
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required><br><br>
+        <!-- Services Section -->
+        <section class="services">
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>I build responsive, user-friendly websites using modern web technologies like HTML5, CSS3, and JavaScript.</p>
+            </div>
+            <div class="service-card">
+                <h3>UI/UX Design</h3>
+                <p>I design clean, intuitive user interfaces with a focus on user experience and accessibility.</p>
+            </div>
+            <div class="service-card">
+                <h3>Consulting</h3>
+                <p>Need guidance on your next web project? I offer consulting services to help turn your ideas into reality.</p>
+            </div>
+        </section>
     
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea><br><br>
+        <!-- Footer Section -->
+        <footer>
+            <p>© 2024 Fabian | <a href="contactme.html">Contact Me</a></p>
+        </footer>
     
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
     </div>
 </body>
 </html>
