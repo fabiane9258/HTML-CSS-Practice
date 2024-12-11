@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body> 
     <div>
-        <div class="navbar">
+        <div class="container">
             <span class="logo">F@RBEE</span>
             <div class="nav">
             <a href="portf.html">Home</a>
-            <a href="">About Me</a>
+            <a href="aboutme.html">About Me</a>
             <a href="skills.html">Skills</a>
             <a href="contactme.html">Contact Me</a>
             </div>
@@ -22,10 +23,9 @@
             <p>Explore my work, skills, and passion for development!</p>
         </header>
         <div class="me">
-        <span class="img"><img src="farbee.jpg" alt="fabianlogo" width="400" height="400"></span>
-     
+        <img src="farbee.jpg" alt="fabianlogo" width="400" height="400">
         <section>
-            <h2>Hi, I'm Fabian</h2>
+            <h2>Hi, I'm <span class="name">Fabian</span></h2>
             <p>I'm a web designer specializing in web development, creating elegant and functional solutions for businesses and individuals.</p>
             <a href="about.html" class="cta-btn">Learn More About Me</a>
            
@@ -47,10 +47,18 @@
                 <p>Need guidance on your next web project? I offer consulting services to help turn your ideas into reality.</p>
             </div>
         </section>
+        <div class="social-links">
+            <a href="www.linkedin.com/in/fabiane-atambo-90947333a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/fabiane9258" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/fabf8871_rocky?t=HCtCYhS2dLr_guPm5ONLUA&s=09" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/__fabian.rocky_?igsh=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100076414561183&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
     
         <!-- Footer Section -->
         <footer>
-            <p>© 2024 Fabian | <a href="contactme.html">Contact Me</a></p>
+            <div class="footer">
+               <p>© 2024 <span class="name">Farbee the Dev</span> | <a href="contactme.html">Contact Me</a></p>
+            </div>
         </footer>
     
     </div>
